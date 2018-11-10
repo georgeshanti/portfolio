@@ -1,0 +1,55 @@
+.projects{
+    width: 100%;
+    color: white;
+}
+
+.container{
+    padding:200px 0px;
+    text-align: center;
+    width: 100%;
+    background: rgba(80, 80, 252, 1);
+    /* margin-top: 200px; */
+    /* border-radius: 10px; */
+}
+
+.container h1{
+    font-size: 3em;
+    margin: 0px;
+    font-family: 'Montserrat';
+}
+
+.container p{
+    width: 70%;
+    display: inline-block;
+    font-family: Montserrat;
+    font-size: 1.2em;
+    letter-spacing: -0.4px;
+    line-height: 1.6em;
+}
+
+.cards{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+.card{
+    display: inline-block;
+    margin: 20px;
+    /* background: white; */
+}
+
+.card > img{
+    display: block;
+    width: 150px;
+    padding: 20px;
+}
+
+.card > span{
+    display: block;
+    font-size: 1.5em;
+    font-family: 'PT Sans';
+    padding-bottom: 20px;
+}

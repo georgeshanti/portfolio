@@ -1,0 +1,13 @@
+.App {
+  position: relative;
+  display: flex;
+  margin-left: 50px; 
+  overflow: hidden;
+}
+
+.sections{
+  width: calc(100% - 0px);
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

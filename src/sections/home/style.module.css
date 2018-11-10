@@ -1,0 +1,52 @@
+.home{
+  width: 100%;
+  height: 100vh;
+  background: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/SsLYSh45lizrfzvep/videoblocks-business-man-working-and-writing-in-laptop-on-office-desk-background-hands-top-view-slow-motion-red-epic_sug-kvxlhe_thumbnail-full01.png');
+}
+
+.home .overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(80, 80, 252, 0.95);
+  position: relative;
+  font-family: 'Montserrat';
+  clip-path: polygon(75% 0%, 100% 0%, 100% 100%, 25% 100%);
+  width: 100%;
+}
+
+.home header{
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.home .display-picture{
+  background: url('https://instagram.fmaa1-1.fna.fbcdn.net/vp/e49cb0ec2e65e2d63d1a000bf52bd697/5C89377F/t51.2885-15/e35/37993765_289405725199246_2967899895630921728_n.jpg');
+  background-size: cover;
+  width: 300px;
+  height:  300px;
+  display: inline-block;
+  border-radius: 50%;
+  border-width: 5px;
+  border-style: solid;
+  margin: 25px;
+}
+
+.home h1, .home h3{
+  margin: 0px;
+}
+
+.home h3{
+  font-size: 1.4em;
+  font-weight: 100;
+}
+
+.home h1{
+  font-size: 4em;
+  font-weight: 500;
+}
