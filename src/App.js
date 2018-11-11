@@ -21,16 +21,19 @@ class App extends Component {
     };
     this.section = this.section.bind(this);
     this.scroll = this.scroll.bind(this);
+    window.onscroll =  this.scroll;
   }
 
   section = (i) => (e) =>{
-    this.setState({'section': i});
-    const tesNode = ReactDOM.findDOMNode(this.refs[i])
-    if(tesNode)
-      tesNode.scrollIntoView({behavior: 'smooth'});
+    // this.setState({'section': i});
+    const tesNode = ReactDOM.findDOMNode(this.refs[i]);
+    if(tesNode){
+      window.parent.scrollTo({top:tesNode.offsetTop, behavior: 'smooth'});
+      // window.pageYOffset = tesNode.offsetTop;
+    }
   }
 
-  scroll = () => (e) => {
+  scroll = (e) => {
     var closest = 0;
     var dist = -1;
     var scrollDist = window.pageYOffset;
@@ -52,7 +55,7 @@ class App extends Component {
     return (
       <div className={styles["App"]}>
         <Menu options={this.menu} active={this.state['section']} change={this.section}/>
-        <div className={styles["sections"]} onWheel={this.scroll()} ref="page" id="page">
+        <div className={styles["sections"]} ref="page" id="page">
           <Home ref={0} />
           <Stack ref={1} />
           <Project ref={2} />

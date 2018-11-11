@@ -5,12 +5,13 @@
 }
 
 .home .overlay{
+  top: 50%;
   width: 100%;
-  height: 100%;
-  background: rgba(80, 80, 252, 0.95);
+  height: 50%;
+  background: linear-gradient(#5050fcf2, #8c43ffff);
   position: relative;
   font-family: 'Montserrat';
-  clip-path: polygon(75% 0%, 100% 0%, 100% 100%, 25% 100%);
+  /* clip-path: polygon(75% 0%, 100% 0%, 100% 100%, 25% 100%); */
   width: 100%;
 }
 
@@ -18,8 +19,8 @@
   display: block;
   width: 100%;
   position: absolute;
-  top: 50%;
-  left: 75%;
+  top: 0%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
@@ -49,4 +50,10 @@
 .home h1{
   font-size: 4em;
   font-weight: 500;
+}
+
+@media (max-width: 500px){
+  .home h1{
+    font-size: 2.2em;
+  }
 }

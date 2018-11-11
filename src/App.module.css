@@ -1,13 +1,22 @@
 .App {
   position: relative;
   display: flex;
-  margin-left: 50px; 
+  /* margin-left: 50px;  */
   overflow: hidden;
 }
 
 .sections{
-  width: calc(100% - 0px);
+  margin-left: 50px;
+  width: calc(100% - 50px);
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+@media (max-width: 500px){
+  .sections{
+    margin-left: 0px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
 }

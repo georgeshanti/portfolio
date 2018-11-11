@@ -60,3 +60,34 @@
 .menu > .item.active > i{
     background: #044089;
 }
+
+@media (max-width: 500px){
+  .menu-container{
+    position: fixed;
+    top: 100%;
+    transform: translateY(-100%);
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+    height: 50px;
+  }
+
+  .menu{
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  .menu:hover{
+      width: 100%;
+  }
+
+  .menu > .item{
+      width: 52px;
+      display: inline-block;
+  }
+
+  .menu > .item > span{
+      display: none;
+  }
+}
