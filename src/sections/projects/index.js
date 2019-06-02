@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styles from './style.module.css';
-import cpp from './cpp.png';
+import cpp from './xse.png';
 import reco from './reco.png';
+import editor from './editor.jpg';
 
 import Project from 'components/project';
 
@@ -20,10 +21,10 @@ class Projects extends Component {
             desc: "A C++ web framework to deploy your WebApps. C++ offers you maximum perfomance and very little overhead. Suitable for WebApps that are CPU intensive and have to do large computations."
         },
         {
-            img: "https://d1dkupr86d302v.cloudfront.net/community/assets/social-media-icons/icon-tag-react-0890ee78bd7e182d153900e4af5b1f33561afdac384c6191eab4e90528b0781b.png",
-            title: "Portfolio",
-            link: "https://github.com/georgeshanti/portfolio",
-            desc: "This portfolio is one I built using react. So now you have proof that I know React :P"
+            img: editor,
+            title: "TsEditor - Markup Editor",
+            link: "https://github.com/georgeshanti/ts-editor",
+            desc: "A HTML editor to write emails, blog posts and other small HTML components. Written entirely in TypeScript"
         }]
     }
     render() {
